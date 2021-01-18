@@ -5,6 +5,7 @@ using UnityEngine;
 public class DoorButton : MonoBehaviour
 {
     public Door door;
+    public bool doorRaised;
 
     // Start is called before the first frame update
     void Start()
@@ -21,10 +22,12 @@ public class DoorButton : MonoBehaviour
     public void OnLookLower()
     {
         door.LowerDoor();
+        doorRaised = false;
     }
 
     public void OnLookRaise()
     {
         door.RaiseDoor();
+        doorRaised = true;
     }
 }
