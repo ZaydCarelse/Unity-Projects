@@ -13,9 +13,472 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2021-01-19T00:14:33.651+02:00
+  lastUpdatedAtString: 2021-01-19T00:17:25.485+02:00
   initializedAtString: 2021-01-19T00:14:33.651+02:00
   log:
+  - commitID: 305ef8821d5f39ca0548bfca9c0361619471a8e2
+    mergeA: 
+    mergeB: 
+    authorName: Zayd Carelse
+    authorEmail: 36879135+ZaydCarelse@users.noreply.github.com
+    commitEmail: 36879135+ZaydCarelse@users.noreply.github.com
+    commitName: Zayd Carelse
+    summary: Jailbreak VR Blockout Phase complete
+    description: FInished the core elements of the Jailbreak VR. Will add the proper
+      3D mesh content, music, UI and particle effects tomorrow.
+    timeString: 2021-01-19T00:16:27.000+02:00
+    commitTimeString: 2021-01-19T00:16:27.000+02:00
+    changes:
+    - path: VRTestProject\Assembly-CSharp-Editor-firstpass.csproj
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Assembly-CSharp-Editor-firstpass.csproj
+      projectPath: Assembly-CSharp-Editor-firstpass.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Assembly-CSharp-Editor.csproj
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Assembly-CSharp-Editor.csproj
+      projectPath: Assembly-CSharp-Editor.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Assembly-CSharp.csproj
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Assembly-CSharp.csproj
+      projectPath: Assembly-CSharp.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Assets\Scenes\Experiment.unity
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Assets\Scenes\Experiment.unity
+      projectPath: Assets\Scenes\Experiment.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Assets\Scripts\CastleInsideButton.cs
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Assets\Scripts\CastleInsideButton.cs
+      projectPath: Assets\Scripts\CastleInsideButton.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: VRTestProject\Assets\Scripts\CastleInsideButton.cs.meta
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Assets\Scripts\CastleInsideButton.cs.meta
+      projectPath: Assets\Scripts\CastleInsideButton.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: VRTestProject\Assets\Scripts\CastleOutsideButton.cs
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Assets\Scripts\CastleOutsideButton.cs
+      projectPath: Assets\Scripts\CastleOutsideButton.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: VRTestProject\Assets\Scripts\CastleOutsideButton.cs.meta
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Assets\Scripts\CastleOutsideButton.cs.meta
+      projectPath: Assets\Scripts\CastleOutsideButton.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: VRTestProject\Assets\Scripts\DoorButton.cs
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Assets\Scripts\DoorButton.cs
+      projectPath: Assets\Scripts\DoorButton.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Assets\Scripts\DoorButtonRaise.cs
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Assets\Scripts\DoorButtonRaise.cs
+      projectPath: Assets\Scripts\DoorButtonRaise.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Assets\Scripts\GameController.cs
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Assets\Scripts\GameController.cs
+      projectPath: Assets\Scripts\GameController.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: VRTestProject\Assets\Scripts\GameController.cs.meta
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Assets\Scripts\GameController.cs.meta
+      projectPath: Assets\Scripts\GameController.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: VRTestProject\Assets\Scripts\Hostage.cs
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Assets\Scripts\Hostage.cs
+      projectPath: Assets\Scripts\Hostage.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: VRTestProject\Assets\Scripts\Hostage.cs.meta
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Assets\Scripts\Hostage.cs.meta
+      projectPath: Assets\Scripts\Hostage.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: VRTestProject\Assets\Scripts\Player.cs
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Assets\Scripts\Player.cs
+      projectPath: Assets\Scripts\Player.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ArtifactDB
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ArtifactDB
+      projectPath: Library\ArtifactDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\0d\0d72efe5136448d17ed631b634da7a69
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\0d\0d72efe5136448d17ed631b634da7a69
+      projectPath: Library\Artifacts\0d\0d72efe5136448d17ed631b634da7a69
+      originalPath: VRTestProject\Library\Artifacts\c9\c96d4182ad806f55da73dd602f4c8431
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\13\133dccaaace9f99953ffe754d5e1c3f4
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\13\133dccaaace9f99953ffe754d5e1c3f4
+      projectPath: Library\Artifacts\13\133dccaaace9f99953ffe754d5e1c3f4
+      originalPath: VRTestProject\Library\Artifacts\e5\e53a7710c4489168c4f13d68a8fc65a2
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\15\155e7c9e055e736a4552d87c9bdf035f
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\15\155e7c9e055e736a4552d87c9bdf035f
+      projectPath: Library\Artifacts\15\155e7c9e055e736a4552d87c9bdf035f
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\25\25c2dad97a84aad68b293ebf9bc25306
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\25\25c2dad97a84aad68b293ebf9bc25306
+      projectPath: Library\Artifacts\25\25c2dad97a84aad68b293ebf9bc25306
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\2a\2a5c2d7102b53e9eb8fd5fd44821e8d0
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\2a\2a5c2d7102b53e9eb8fd5fd44821e8d0
+      projectPath: Library\Artifacts\2a\2a5c2d7102b53e9eb8fd5fd44821e8d0
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\2b\2b55b078d91bd9e5b848127d5c2769c0
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\2b\2b55b078d91bd9e5b848127d5c2769c0
+      projectPath: Library\Artifacts\2b\2b55b078d91bd9e5b848127d5c2769c0
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\31\317e6a15cf37fdfa27e9853e111d56d8
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\31\317e6a15cf37fdfa27e9853e111d56d8
+      projectPath: Library\Artifacts\31\317e6a15cf37fdfa27e9853e111d56d8
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\37\37b82c368ec3640e313334e323ee0261
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\37\37b82c368ec3640e313334e323ee0261
+      projectPath: Library\Artifacts\37\37b82c368ec3640e313334e323ee0261
+      originalPath: VRTestProject\Library\Artifacts\d9\d9f10d99a1fbcdf220dc3f5cf8d802bc
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\3e\3e65148051d6d7daa0136f13fd692405
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\3e\3e65148051d6d7daa0136f13fd692405
+      projectPath: Library\Artifacts\3e\3e65148051d6d7daa0136f13fd692405
+      originalPath: VRTestProject\Library\Artifacts\c0\c094d4d3e9d897c87cf2b5b43d66c08e
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\57\57512cafc46be8bca50e5e69eac4f879
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\57\57512cafc46be8bca50e5e69eac4f879
+      projectPath: Library\Artifacts\57\57512cafc46be8bca50e5e69eac4f879
+      originalPath: VRTestProject\Library\Artifacts\86\863fef2cc71658b1e30062ab51d798ab
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\58\5816d5fb8dbb72e83fcafb1cc4db7b67
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\58\5816d5fb8dbb72e83fcafb1cc4db7b67
+      projectPath: Library\Artifacts\58\5816d5fb8dbb72e83fcafb1cc4db7b67
+      originalPath: VRTestProject\Library\Artifacts\e9\e96cb88d853ecd182666a38363ba4515
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\5d\5db062742353d8208bf1447e20bba680
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\5d\5db062742353d8208bf1447e20bba680
+      projectPath: Library\Artifacts\5d\5db062742353d8208bf1447e20bba680
+      originalPath: VRTestProject\Library\Artifacts\38\38e2be9e8fbed6a978331ddd583bb5ee
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\78\785d8e78e5d82cc2ad185bf3a30f7679
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\78\785d8e78e5d82cc2ad185bf3a30f7679
+      projectPath: Library\Artifacts\78\785d8e78e5d82cc2ad185bf3a30f7679
+      originalPath: VRTestProject\Library\Artifacts\bd\bdd35e7219c82774bea3a08aec8a9619
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\84\841aa929b2314c0b5fa0b3c2e685bb13
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\84\841aa929b2314c0b5fa0b3c2e685bb13
+      projectPath: Library\Artifacts\84\841aa929b2314c0b5fa0b3c2e685bb13
+      originalPath: VRTestProject\Library\Artifacts\56\568ca8d3c33779e14dcc8b8549c2e043
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\88\8852266b834d575ddaf22eb8b3ced174
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\88\8852266b834d575ddaf22eb8b3ced174
+      projectPath: Library\Artifacts\88\8852266b834d575ddaf22eb8b3ced174
+      originalPath: VRTestProject\Library\Artifacts\34\34a59794207596f56ca11a49635734ff
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\89\89b6c4063c325caf351a0579041db5a9
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\89\89b6c4063c325caf351a0579041db5a9
+      projectPath: Library\Artifacts\89\89b6c4063c325caf351a0579041db5a9
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\92\92606bbe6f90ec900fff976ea488505c
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\92\92606bbe6f90ec900fff976ea488505c
+      projectPath: Library\Artifacts\92\92606bbe6f90ec900fff976ea488505c
+      originalPath: VRTestProject\Library\Artifacts\b6\b61985d07c63cd361060d6d6b8e25dcc
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\97\97d3d372946c2b9fe0beb4dd0638c517
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\97\97d3d372946c2b9fe0beb4dd0638c517
+      projectPath: Library\Artifacts\97\97d3d372946c2b9fe0beb4dd0638c517
+      originalPath: VRTestProject\Library\Artifacts\9d\9da77a42662448cd49bd9c06dca1190a
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\aa\aaab5d2a9a8578b36ecce95da075499f
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\aa\aaab5d2a9a8578b36ecce95da075499f
+      projectPath: Library\Artifacts\aa\aaab5d2a9a8578b36ecce95da075499f
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\ab\ab83b90bbd151a8bda11b5d984dbaa3a
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\ab\ab83b90bbd151a8bda11b5d984dbaa3a
+      projectPath: Library\Artifacts\ab\ab83b90bbd151a8bda11b5d984dbaa3a
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\be\beeec121ca42bc88fd6c81549f8fd60a
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\be\beeec121ca42bc88fd6c81549f8fd60a
+      projectPath: Library\Artifacts\be\beeec121ca42bc88fd6c81549f8fd60a
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\e6\e6e37d7d37c0d811d7249c6ae532d246
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\e6\e6e37d7d37c0d811d7249c6ae532d246
+      projectPath: Library\Artifacts\e6\e6e37d7d37c0d811d7249c6ae532d246
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\e9\e9fdc28eedb9f3cdb49e9d14a46bae9d
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\e9\e9fdc28eedb9f3cdb49e9d14a46bae9d
+      projectPath: Library\Artifacts\e9\e9fdc28eedb9f3cdb49e9d14a46bae9d
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\ee\ee79802b2682cd9849a02eaee2376ad0
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\ee\ee79802b2682cd9849a02eaee2376ad0
+      projectPath: Library\Artifacts\ee\ee79802b2682cd9849a02eaee2376ad0
+      originalPath: VRTestProject\Library\Artifacts\27\2783ac65386eedd1cba9d9d480cb926d
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: VRTestProject\Library\Artifacts\f2\f2c23a1ce8ad7428779aeec9465c9ce2
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\Artifacts\f2\f2c23a1ce8ad7428779aeec9465c9ce2
+      projectPath: Library\Artifacts\f2\f2c23a1ce8ad7428779aeec9465c9ce2
+      originalPath: VRTestProject\Library\Artifacts\b0\b0978c984d66669ecfa6710e706626e8
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: VRTestProject\Library\EditorInstance.json
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\EditorInstance.json
+      projectPath: Library\EditorInstance.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ScriptAssemblies\Assembly-CSharp.dll
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ScriptAssemblies\Assembly-CSharp.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ScriptAssemblies\Assembly-CSharp.pdb
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ScriptAssemblies\Assembly-CSharp.pdb
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.Rider.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+      projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ScriptAssemblies\Unity.Timeline.dll
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ScriptAssemblies\Unity.Timeline.dll
+      projectPath: Library\ScriptAssemblies\Unity.Timeline.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+      projectPath: Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ScriptAssemblies\UnityEditor.UI.dll
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ScriptAssemblies\UnityEditor.UI.dll
+      projectPath: Library\ScriptAssemblies\UnityEditor.UI.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+      projectPath: Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ScriptAssemblies\UnityEngine.UI.dll
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ScriptAssemblies\UnityEngine.UI.dll
+      projectPath: Library\ScriptAssemblies\UnityEngine.UI.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ShaderCache\6\679b1af5d05a1a52776c53def0830497.bin
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ShaderCache\6\679b1af5d05a1a52776c53def0830497.bin
+      projectPath: Library\ShaderCache\6\679b1af5d05a1a52776c53def0830497.bin
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ShaderCache\8\84b99cc29bea706030b3b756ea3b3695.bin
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ShaderCache\8\84b99cc29bea706030b3b756ea3b3695.bin
+      projectPath: Library\ShaderCache\8\84b99cc29bea706030b3b756ea3b3695.bin
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: VRTestProject\Library\ShaderCache\EditorEncounteredVariants
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\ShaderCache\EditorEncounteredVariants
+      projectPath: Library\ShaderCache\EditorEncounteredVariants
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\SourceAssetDB
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\SourceAssetDB
+      projectPath: Library\SourceAssetDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\StateCache\Hierarchy\4c969a-mainStage.json
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\StateCache\Hierarchy\4c969a-mainStage.json
+      projectPath: Library\StateCache\Hierarchy\4c969a-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\StateCache\SceneView\cc2798-mainStage.json
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\StateCache\SceneView\cc2798-mainStage.json
+      projectPath: Library\StateCache\SceneView\cc2798-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\UIElements\EditorWindows\UnityEditor.PackageManager.UI.PackageManagerWindow.pref
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\UIElements\EditorWindows\UnityEditor.PackageManager.UI.PackageManagerWindow.pref
+      projectPath: Library\UIElements\EditorWindows\UnityEditor.PackageManager.UI.PackageManagerWindow.pref
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\gfu\cache\branches.yaml
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\gfu\cache\repoinfo.yaml
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\shadercompiler-UnityShaderCompiler.exe1.log
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\shadercompiler-UnityShaderCompiler.exe1.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe1.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\shadercompiler-UnityShaderCompiler.exe3.log
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\shadercompiler-UnityShaderCompiler.exe3.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe3.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\ProjectSettings\EditorBuildSettings.asset
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\ProjectSettings\EditorBuildSettings.asset
+      projectPath: ProjectSettings\EditorBuildSettings.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: 83458236aa07683fa96f783429f06ddcb26b84e8
     mergeA: 
     mergeB: 
