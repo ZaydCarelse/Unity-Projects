@@ -13,9 +13,69 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2021-01-19T00:17:25.485+02:00
-  initializedAtString: 2021-01-19T00:14:33.651+02:00
+  lastUpdatedAtString: 2021-01-19T12:06:06.830+02:00
+  initializedAtString: 2021-01-19T10:52:02.768+02:00
   log:
+  - commitID: b0e26579992e0b6c40dd3b36eb4ce3c0c5765e28
+    mergeA: 
+    mergeB: 
+    authorName: Zayd Carelse
+    authorEmail: 36879135+ZaydCarelse@users.noreply.github.com
+    commitEmail: 36879135+ZaydCarelse@users.noreply.github.com
+    commitName: Zayd Carelse
+    summary: .
+    description: 
+    timeString: 2021-01-19T00:17:45.000+02:00
+    commitTimeString: 2021-01-19T00:17:45.000+02:00
+    changes:
+    - path: VRTestProject\Library\SourceAssetDB
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\SourceAssetDB
+      projectPath: Library\SourceAssetDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\gfu\cache\branches.yaml
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\gfu\cache\gituser.yaml
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\gfu\cache\gituser.yaml
+      projectPath: Library\gfu\cache\gituser.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: VRTestProject\Library\gfu\cache\repoinfo.yaml
+      fullPath: C:\Users\zaydc\Desktop\GameDev\Unity-Projects\VRTestProject\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: 305ef8821d5f39ca0548bfca9c0361619471a8e2
     mergeA: 
     mergeB: 
