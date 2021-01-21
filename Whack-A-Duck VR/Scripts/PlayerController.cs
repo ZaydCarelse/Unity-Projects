@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Player Data:")]
+    public int score = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +26,8 @@ public class PlayerController : MonoBehaviour
                 {
                     Duck duck = hit.transform.GetComponent<Duck>();
                     duck.OnHit();
+
+                    score++;
                 }
             }
         }

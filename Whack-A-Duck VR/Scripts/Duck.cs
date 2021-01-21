@@ -9,8 +9,8 @@ public class Duck : MonoBehaviour
     public float hiddenHeight = -0.3f;
 
     [Header("Gameplay Mechanics:")]
-    public float speed = 4f;
-    public float disappearDuration = 1.25f;
+    public float speed = 10f;
+    public float disappearDuration = 15f;
 
     private Vector3 targetPosition;
     private float disappearTimer = 0f;
