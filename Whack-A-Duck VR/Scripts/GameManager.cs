@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI infoText;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI hiscoreText;
+    public TextMeshProUGUI congratsText;
 
     private Duck[] ducks;
     private float spawnTimer = 0f;
@@ -25,7 +26,8 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;    
+        instance = this;
+        hiscoreText.text = "HISCORE:" + PlayerPrefs.GetInt("HISCORE", 0).ToString();
     }
     // Start is called before the first frame update
     void Start()
@@ -57,7 +59,7 @@ public class GameManager : MonoBehaviour
             scoreText.text = "SCORE:" + player.score;
         } else
         {
-            infoText.text = "GAME OVER!\nWANNA GIVE IT ANOTHER SHOT, CHAMP?";
+            infoText.text = "GAME OVER! WANNA GIVE IT ANOTHER SHOT, CHAMP?";
 
             scoreText.text = "SCORE:" + player.score;
 
