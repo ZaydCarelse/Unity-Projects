@@ -28,6 +28,11 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene("Controls");
     }
 
+    public void PlayGame()
+    {
+        SceneManager.LoadScene("Level01");
+    }
+
     public void CloseButton()
     {
         exitButtonInfo.SetActive(true);
@@ -36,5 +41,19 @@ public class MenuController : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
+    }
+
+    public void MuteAudio()
+    {
+        if (!MusicController.instance.isMute)
+        {
+            AudioListener.volume = 0;
+            MusicController.instance.isMute = true;
+        }
+        else
+        {
+            AudioListener.volume = 1;
+            MusicController.instance.isMute = false;
+        }
     }
 }
