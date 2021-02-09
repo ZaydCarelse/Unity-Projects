@@ -15,6 +15,7 @@ public class Cup : MonoBehaviour
     public Vector3 targetPosition;
 
     public Vector3 cupStart;
+    public Vector3 coinStart;
 
     // Start is called before the first frame update
     void Start()

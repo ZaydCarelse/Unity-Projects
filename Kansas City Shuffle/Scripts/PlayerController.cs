@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public bool canPick = false;
     public bool picked = false;
     public bool won = false;
+    public GameManager gm;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,7 @@ public class PlayerController : MonoBehaviour
     {
         if (canPick == true)
         {
-            if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Fire1"))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 RaycastHit hit;
                 if (Physics.Raycast(transform.position, transform.forward, out hit))
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
                         picked = true;
                         won = (cup.coin != null);
                         canPick = false;
+                        gm.targetCup.coin = null;
                     }
                 }
             }

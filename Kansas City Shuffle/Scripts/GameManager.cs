@@ -12,16 +12,31 @@ public class GameManager : MonoBehaviour
     public PlayerController player;
 
     [Header("UI Elements:")]
-    public int coinsCollected = 0;
-    public int multiplier = 1;
+    public int coinsCollected = 5;
+    public int multiplier = 5;
+    public int streak = 0;
     public TextMeshProUGUI infoText;
+    public GameObject infoTextParent;
     public TextMeshProUGUI coinPurse;
+    public TextMeshProUGUI multiplierText;
+    public TextMeshProUGUI streakCounter;
+
+    public bool turnActive = false;
+    public bool beginPressed = false;
+
+    public Vector3 coinStart;
+
+    public Cup targetCup;
+
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        infoText.text = "Pick the correct cup!";
+        coinStart =coin.transform.position;
+        coinPurse.text = "Coins: " + coinsCollected;
+        multiplierText.text = "Multiplier: " + (multiplier - 5);
         //Add the Scene Management to load the game or menu scene
 
         /* resetTimer -= Time.deltaTime;
@@ -35,30 +50,61 @@ public class GameManager : MonoBehaviour
     {
         if (player.picked)
         {
-            if (player.won)
+            if (player.won && turnActive)
             {
-                infoText.text = "You Win!";
-                coinsCollected += multiplier;
-                coinPurse.text = "Coins: " + coinsCollected;
-            } else
+                PlayerWon();
+            } else if (!player.won && turnActive)
             {
-                infoText.text = "You Lose!";
-                coinsCollected -= multiplier;
-                coinPurse.text = "Coins: " + coinsCollected;
+                PlayerLost();
             }
         }
+
+        multiplierText.text = "Multiplier: " + (multiplier - 5);
+        streakCounter.text = "Streak: " + streak;
+    }
+
+    public void PlayerWon()
+    {
+        infoTextParent.gameObject.SetActive(true);
+        infoText.text = "You've won. Let's make this harder.";
+        coinsCollected += (multiplier - 5);
+        coinPurse.text = "Coins: " + coinsCollected;
+        multiplier++;
+        streak++;
+        turnActive = false;
+        targetCup = null;
+        beginPressed = false;
+    }
+
+    public void PlayerLost()
+    {
+        infoTextParent.gameObject.SetActive(true);
+        infoText.text = "You Lose! It seems I'll have a shiney new toy to play with soon. MUHAHAHAHAHA!";
+        coinsCollected -= (multiplier - 5);
+        coinPurse.text = "Coins: " + coinsCollected;
+        turnActive = false;
+        targetCup = null;
+        streak = 0;
+        beginPressed = false;
     }
 
     public void PickACup()
     {
-        for (int i = 0; i < cups.Length; i++)
+        if (!beginPressed)
         {
-            cups[i].targetPosition = cups[i].cupStart;
+            beginPressed = true;
+            infoTextParent.gameObject.SetActive(false);
+            for (int i = 0; i < cups.Length; i++)
+            {
+                cups[i].targetPosition = cups[i].cupStart;
+            }
+            player.picked = false;
+            player.won = false;
+            StartCoroutine(ShuffleRoutine());
         }
-        StartCoroutine(ShuffleRoutine());
     }
 
-    private IEnumerator ShuffleRoutine()
+    public IEnumerator ShuffleRoutine()
     {
         yield return new WaitForSeconds(1f);
         foreach (Cup cup in cups)
@@ -68,7 +114,7 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
-        Cup targetCup = cups[Random.Range(0, cups.Length)];
+        targetCup = cups[Random.Range(0, cups.Length)];
         targetCup.coin = coin;
 
         coin.transform.position = new Vector3(targetCup.transform.position.x, coin.transform.position.y, targetCup.transform.position.z);
@@ -82,7 +128,7 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSeconds(1.0f);
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < multiplier; i++)
         {
             Cup cup1 = cups[Random.Range(0, cups.Length)];
             Cup cup2 = cup1;
@@ -100,5 +146,11 @@ public class GameManager : MonoBehaviour
         }
 
         player.canPick = true;
+        turnActive = true;
+    }
+
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }
