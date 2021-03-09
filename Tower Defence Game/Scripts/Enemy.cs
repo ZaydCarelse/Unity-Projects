@@ -2,9 +2,13 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [Header("Movement:")]
     public float speed = 10f;
 
+    [Header("Navigation:")]
     private Transform target;
+
+    [Header("Waves:")]
     private int wavePointIndex = 0;
 
     private void Start()
