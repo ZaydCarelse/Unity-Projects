@@ -3,7 +3,7 @@ using UnityEngine;
 public class BuildManager : MonoBehaviour
 {
     [Header("Data:")]
-    private GameObject turretToBuild;
+    private TurretInfo turretToBuild;
     public GameObject standardTurretPrefab;
     public GameObject missileLauncherPrefab;
 
@@ -19,13 +19,26 @@ public class BuildManager : MonoBehaviour
         instance = this;
     }
 
-    public GameObject GetTurretToBuild()
-    {
-        return turretToBuild;
-    }
+    public bool CanBuild { get { return turretToBuild != null; } }
 
-    public void SetTurretToBuild(GameObject turret)
+    public void SelectTurretToBuild(TurretInfo turret)
     {
         turretToBuild = turret;
+    }
+
+    public void BuildTurretOn(Node node)
+    {
+        if (PlayerStats.Money < turretToBuild.cost)
+        {
+            Debug.Log("Not enought Gold!");
+            return;
+        }
+
+        PlayerStats.Money -= turretToBuild.cost;
+
+        GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
+        node.turret = turret;
+
+        Debug.Log("Turret built. Money left: " + PlayerStats.Money);
     }
 }
