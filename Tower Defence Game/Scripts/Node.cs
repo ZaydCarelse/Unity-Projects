@@ -5,6 +5,7 @@ public class Node : MonoBehaviour
 {
     [Header("Selection:")]
     public Color hoverColor;
+    public Color notEnoughMoneyColor;
     private Color defaultColor;
     private Renderer rend;
 
@@ -50,7 +51,14 @@ public class Node : MonoBehaviour
         if (!buildManager.CanBuild)
             return;
 
-        rend.material.color = hoverColor;
+        if (buildManager.HasMoney)
+        {
+            rend.material.color = hoverColor;
+        } else
+        {
+            rend.material.color = notEnoughMoneyColor;
+        }
+
     }
 
     void OnMouseExit()
