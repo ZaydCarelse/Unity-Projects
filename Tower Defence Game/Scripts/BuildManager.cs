@@ -4,8 +4,8 @@ public class BuildManager : MonoBehaviour
 {
     [Header("Data:")]
     private TurretInfo turretToBuild;
-    public GameObject standardTurretPrefab;
-    public GameObject missileLauncherPrefab;
+    private Node selectedNode;
+    public NodeUI nodeUI;
 
     [Header("Build Particles:")]
     public GameObject buildEffect;
@@ -28,6 +28,27 @@ public class BuildManager : MonoBehaviour
     public void SelectTurretToBuild(TurretInfo turret)
     {
         turretToBuild = turret;
+        DeselectNode();
+    }
+
+    public void SelectNode(Node node)
+    {
+        if (selectedNode == node)
+        {
+            DeselectNode();
+            return;
+        }
+
+        selectedNode = node;
+        turretToBuild = null;
+
+        nodeUI.SetTarget(node);
+    }
+
+    public void DeselectNode()
+    {
+        selectedNode = null;
+        nodeUI.Hide();
     }
 
     public void BuildTurretOn(Node node)

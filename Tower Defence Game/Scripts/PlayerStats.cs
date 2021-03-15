@@ -7,9 +7,17 @@ public class PlayerStats : MonoBehaviour
     public static int Money;
     public int startMoney = 400;
 
+    [Header("Player:")]
+    public static int Lives;
+    public int startLives = 10;
+    public static int waves;
+
     void Start()
     {
-        Money = startMoney;    
+        Money = startMoney;
+        Lives = startLives;
+
+        waves = 0;
     }
 
 

@@ -5,7 +5,7 @@ public class CameraController : MonoBehaviour
     [Header("Movement:")]
     public float panSpeed = 30f;
     public float panBorderThickness = 10f;
-    private bool movementEnabled = true;
+    private bool movementEnabled = false;
     public float scrollSpeed = 5f;
 
     [Header("Movement Constraints:")]
@@ -18,6 +18,13 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.gameEnded)
+        {
+            this.enabled = false;
+            return;
+        }
+
+
         //Enable or Disable movement
         if (Input.GetKeyDown(KeyCode.Escape))
             movementEnabled = !movementEnabled;
