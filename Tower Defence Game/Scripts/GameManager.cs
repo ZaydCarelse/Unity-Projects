@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1f;
         gameEnded = false;
     }
 
@@ -29,5 +30,7 @@ public class GameManager : MonoBehaviour
         gameEnded = true;
 
         gameOverUI.SetActive(true);
+
+        Time.timeScale = 0f;
     }
 }

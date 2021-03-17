@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
+    [Header("Enemy Info:")]
+    public static int EnemiesAlive = 0;
+
     [Header("Transforms:")]
     public Transform enemyPrefab;
     public Transform spawnPoint;
@@ -16,14 +19,18 @@ public class WaveSpawner : MonoBehaviour
 
     [Header("Waves:")]
     private int waveNumber = 1;
+    public Wave[] waves;
 
     private void Update()
     {
+        if (EnemiesAlive > 0)
+            return;
+
         if(countDown <= 0f)
         {
             StartCoroutine(SpawnWave());
             countDown = timeBetweenWaves;
-
+            return;
         }
 
         countDown -= Time.deltaTime;
@@ -35,19 +42,28 @@ public class WaveSpawner : MonoBehaviour
 
     IEnumerator SpawnWave()
     {
-        waveNumber++;
         PlayerStats.waves++;
 
-        for (int i = 0; i < waveNumber; i++)
+        Wave wave = waves[waveNumber];
+
+        for (int i = 0; i < wave.spawnAmount; i++)
         {
-            SpawnEnemy();
-            yield return new WaitForSeconds(0.5f);
+            SpawnEnemy(wave.enemy);
+            yield return new WaitForSeconds(1 / wave.spawnRate);
         }
 
+        waveNumber++;
+
+        if (waveNumber == waves.Length)
+        {
+            Debug.Log("Level Complete!");
+            this.enabled = false;
+        }
     }
 
-    void SpawnEnemy()
+    void SpawnEnemy(GameObject enemy)
     {
-        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);   
+        Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
+        EnemiesAlive++;
     }
 }

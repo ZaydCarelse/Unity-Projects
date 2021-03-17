@@ -9,8 +9,12 @@ public class Node : MonoBehaviour
     private Color defaultColor;
     private Renderer rend;
 
-    [Header("Optional:")]
+    [HideInInspector]
     public GameObject turret;
+    [HideInInspector]
+    public TurretInfo currentTurretInfo;
+    [HideInInspector]
+    public bool isUpgraded = false;
 
     [Header("Positioning:")]
     public Vector3 positionOffset;
@@ -40,7 +44,7 @@ public class Node : MonoBehaviour
         if (!buildManager.CanBuild)
             return;
 
-        buildManager.BuildTurretOn(this);
+        BuildTurret(buildManager.GetTurretToBuild());
     }
 
     void OnMouseEnter()
@@ -66,8 +70,61 @@ public class Node : MonoBehaviour
         rend.material.color = defaultColor;
     }
 
+    public void BuildTurret(TurretInfo info)
+    {
+        if (PlayerStats.Money < info.cost)
+        {
+            Debug.Log("Not enought Gold!");
+            return;
+        }
+
+        PlayerStats.Money -= info.cost;
+
+        GameObject _turret = (GameObject)Instantiate(info.prefab, GetBuildPosition(), Quaternion.identity);
+        turret = _turret;
+
+        currentTurretInfo = info;
+
+        GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
+        Destroy(effect, 5f);
+    }
+
+    public void SellTurret()
+    {
+        PlayerStats.Money += currentTurretInfo.GetSellAmount();
+
+        GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
+        Destroy(effect, 5f);
+
+        Destroy(turret);
+        currentTurretInfo = null;
+    }
+
     public Vector3 GetBuildPosition()
     {
         return transform.position + positionOffset;
+    }
+
+    public void UpgradeTurret()
+    {
+        if (PlayerStats.Money < currentTurretInfo.upgradeCost)
+        {
+            Debug.Log("Not enough Gold to upgrade!");
+            return;
+        }
+
+        PlayerStats.Money -= currentTurretInfo.upgradeCost;
+
+        //Gets rid of the old turret
+        Destroy(turret);
+
+        //Builds new turret
+        GameObject _turret = (GameObject)Instantiate(currentTurretInfo.upgradedPrefab, GetBuildPosition(), Quaternion.identity);
+        turret = _turret;
+
+        isUpgraded = true;
+
+        GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
+        Destroy(effect, 5f);
     }
 }
