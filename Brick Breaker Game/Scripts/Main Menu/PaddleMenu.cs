@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Paddle : MonoBehaviour
+public class PaddleMenu : MonoBehaviour
 {
     [Header("Movement:")]
     public float speed;
@@ -13,17 +13,11 @@ public class Paddle : MonoBehaviour
     public float leftScreenEdge;
 
     [Header("Components:")]
-    public GameManager gameManager;
     public CameraShake cameraShake;
-    public Ball ball;
-    public Transform effectSpawnPoint;
+    public BallMenu ball;
 
     [Header("Audio:")]
     public AudioSource paddleHitSound;
-    public AudioSource healthPowerUpSound;
-    public AudioSource damagePowerUpSound;
-    public AudioSource zapPowerUpSound;
-    public AudioSource pointsPowerUpSound;
 
     void Start()
     {
@@ -32,10 +26,6 @@ public class Paddle : MonoBehaviour
 
     void Update()
     {
-        if (gameManager.gameOver)
-        {
-            return;
-        }
 
         float horizontal = Input.GetAxis("Horizontal");
 
@@ -58,33 +48,7 @@ public class Paddle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "HealthPowerUp")
-        {
-            healthPowerUpSound.Play();
-            gameManager.UpdateLives(1);
-            Destroy(other.gameObject);
-        }
-        
-        if (other.gameObject.tag == "DamagePowerUp")
-        {
-            StartCoroutine(cameraShake.Shake(0.2f, 0.025f));
-            damagePowerUpSound.Play();
-            gameManager.UpdateLives(-1);
-            Destroy(other.gameObject);
-        }
-        
-        if (other.gameObject.tag == "SpeedUpPowerUp")
-        {
-            zapPowerUpSound.Play();
-            Destroy(other.gameObject);
-        }
-
-        if (other.gameObject.tag == "PointsCollectable")
-        {
-            gameManager.UpdateScore(200);
-            pointsPowerUpSound.Play();
-            Destroy(other.gameObject);
-        }
+       
     }
 
     public void OnCollisionEnter2D(Collision2D other)
